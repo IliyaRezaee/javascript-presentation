@@ -1,0 +1,77 @@
+:root {
+  --general-size: 400px;
+}
+
+body {
+  font-family: monospace;
+  font-size: 3em;
+  background-color: #fff;
+}
+
+.bg-yellow {
+  background-color: #f7e018;
+}
+
+.bg-blue {
+  background-color: #2d79c7;
+}
+
+.wrap {
+  margin-top: 2em;
+}
+
+.title {
+  font-size: 5em;
+  width: auto;
+}
+
+/* header,
+.header {
+  color: #fff;
+} */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+}
+
+.split-vertically {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.split-horizontally {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+.image-square {
+  aspect-ratio: 1 / 1;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.w-general-size {
+  width: min(var(--general-size), 100%);
+}

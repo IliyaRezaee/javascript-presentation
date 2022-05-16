@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Presentation</title>
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" type="image/x-icon">
+    <link rel="stylesheet" href="webslides/webslides.css" />
+    <script src="webslides/webslides.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Slide 1 -->
+        <section class="bg-yellow">
+          <h1 class="content-center title">Javascript</h1>
+        </section>
+
+        <!-- Slide 2 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>What?</h1>
+          </header>
+          <div class="wrap flex-container split-vertically align-items-center">
+            <ul class="fadeIn slow">
+              <li>dynamic</li>
+              <li>single threaded with a non-blocking event loop</li>
+              <li>interpreted</li>
+              <li>prototype-based</li>
+              <li>garbage collected</li>
+              <li>multi-paradigm</li>
+              <li>object-orientation</li>
+              <li>Runs on both client and server (Node.js/Deno)</li>
+            </ul>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"
+              alt="javascript logo"
+              class="w-general-size fadeIn slow"
+            />
+          </div>
+        </section>
+
+        <!-- Slide 3 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>History</h1>
+          </header>
+          <div class="wrap">
+            <div class="flex-container split-vertically">
+              <ul class="fadeIn slow" style="list-style: disclosure-closed">
+                <li>created by Brendan Eich in 1995</li>
+                <li>
+                  with the goal of adding an easy to learn scripting language to
+                  the netscape browser
+                </li>
+                <li>it was originally named mocha</li>
+              </ul>
+              <a href="https://en.wikipedia.org/wiki/Brendan_Eich">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/600px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg"
+                  class="fadeIn slow image-square w-general-size"
+                  alt="Brendan Eich"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 4 -->
+        <section class="slide-top">
+          <header class="bg-blue">
+            <h1>typescript</h1>
+          </header>
+          <div class="wrap flex-container split-vertically align-items-center" style="margin-top: 5em;">
+            <ul class="fadeIn slow">
+              <li>developed and maintained by Microsoft</li>
+              <li>it is a strict syntactical superset of JavaScript</li>
+              <li>it compiles to javascript</li>
+              <li>Can be used on both client and server (Node.js/Deno)</li>
+            </ul>
+            <a href="https://en.wikipedia.org/wiki/TypeScript" class="w-general-size">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png"
+                alt="typescript logo"
+                class="w-general-size fadeIn slow"
+              />
+            </a>
+          </div>
+        </section>
+
+        <!-- Slide 5 -->
+        <section class="bg-yellow">
+          <h1 class="content-center header title">Use cases</h1>
+        </section>
+
+        <!-- Slide 6 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>Front-end</h1>
+          </header>
+          <div class="wrap fadeIn slow">
+            <ul style="list-style: disclosure-closed">
+              <li>Why?</li>
+            </ul>
+            <ul>
+              <li>vanilla/pure</li>
+              <li
+                style="cursor: pointer"
+                onclick="document.querySelector('#frontend-frameworks').style.display = 'grid'"
+              >
+                frameworks
+              </li>
+            </ul>
+            <ul
+              id="frontend-frameworks"
+              class="grid-container zoomIn list-style-none"
+              style="display: none; margin-top: 6em"
+            >
+              <li>
+                <a href="https://reactjs.org">
+                  <img
+                    src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
+                    alt="react logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://angular.io/">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/angular/angular-ar21.png"
+                    alt="angular logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://vuejs.org">
+                  <img
+                    src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.png"
+                    alt="vue logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://svelte.dev/">
+                  <img
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--be3eR7Dm--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://nunomalex.me/svelte-logo.png"
+                    alt="svelte logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Slide 7 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>Back-end</h1>
+          </header>
+          <div
+            class="wrap fadeIn slow flex-container split-vertically align-items-center"
+          >
+            <ul style="flex: 1">
+              <li>
+                runtime:
+                <a href="https://nodejs.org">Nodejs</a>(<a
+                  href="https://npmjs.com"
+                  >npm</a
+                >) /
+                <a href="https://deno.land/">Deno</a>
+              </li>
+              <li><a href="https://expressjs.com">express</a></li>
+              <li><a href="https://fastify.io">fastify</a></li>
+            </ul>
+            <ul
+              class="flex-container split-horizontally zoomIn list-style-none"
+              style="flex: 1; row-gap: 1em"
+            >
+              <li>
+                <img
+                  src="https://buttercms.com/static/images/tech_banners/ExpressJS.png"
+                  alt="express logo"
+                  class="w-general-size"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://raw.githubusercontent.com/fastify/graphics/96648545bcad9d1984dd96363a39e2775b59afef/fastify-landscape-outlined.svg"
+                  alt="fastify logo"
+                  class="w-general-size"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Slide 8 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>Native applications</h1>
+          </header>
+          <div class="wrap">
+            <ul
+              class="flex-container split-vertically list-style-none"
+              style="justify-content: space-around"
+            >
+              <li><h3>Mobile</h3></li>
+              <li><h3>Desktop</h3></li>
+            </ul>
+            <div
+              class="grid-container"
+              style="
+                grid-template-columns: repeat(2, var(--general-size));
+                justify-content: space-around;
+              "
+            >
+              <div
+                class="flex-container split-horizontally"
+                style="justify-content: space-around; height: 100%"
+              >
+                <a href="https://ionicframework.com/">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Ionic-logo-landscape.svg/1200px-Ionic-logo-landscape.svg.png"
+                    class="w-general-size zoomIn"
+                    alt="ionic logo"
+                  />
+                </a>
+                <a href="https://reactnative.dev/">
+                  <img
+                    src="https://cdn.buttercms.com/S6sfpy7OT3yBokvhGo09"
+                    alt="react native logo"
+                    class="w-general-size zoomIn"
+                  />
+                </a>
+              </div>
+              <a href="https://electronjs.org">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png"
+                  alt="electron logo"
+                  class="w-general-size image-square zoomIn"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9 -->
+        <section class="bg-yellow">
+          <h1 class="content-center header title">
+            An
+            <a href="example/index.html" style="color: black;">Example</a>
+          </h1>
+        </section>
+
+        <!-- Slide 10 -->
+        <section class="slide-top">
+          <header class="bg-yellow">
+            <h1>Resources</h1>
+          </header>
+          <div class="wrap">
+            <ul>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/JavaScript">
+                  https://en.wikipedia.org/wiki/JavaScript
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/TypeScript">
+                  https://en.wikipedia.org/wiki/TypeScript
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=DHjqpvDnNGE">
+                  https://www.youtube.com/watch?v=DHjqpvDnNGE
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=_XZ54AzhuJE">
+                  https://www.youtube.com/watch?v=_XZ54AzhuJE
+                </a>
+              </li>
+          </div>
+        </section>
+
+        <!-- Slide 11 -->
+        <section class="slide-top">
+          <div class="wrap">
+            <div class="content-center">
+              <h2><strong>Thank You!</strong></h2>
+              <p>
+                Thank you to the creators of WebSlides :) Follow them on Twitter
+                below
+              </p>
+              <p>
+                <a href="https://twitter.com/jlantunez">@jlantunez</a>,
+                <a href="https://twitter.com/belelros">@belelros</a>, and
+                <a href="https://twitter.com/luissacristan">@luissacristan</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script>
+      new WebSlides("#webslides");
+    </script>
+  </body>
+</html>
